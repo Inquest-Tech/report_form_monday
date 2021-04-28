@@ -1,0 +1,25 @@
+button,
+.button {
+	&:active {
+		outline: 0;
+	}
+}
+
+.button {
+	display: inline-block;
+	background: $pink;
+	border:1px solid $pink;
+	border-radius: 5px;
+	font-size: 16px;
+	color:$white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding:10px 30px;
+	margin:15px 0;
+	min-height: 50px;
+	@include transition(500ms);
+
+	&:hover {
+		opacity: .85;
+	}
+}

@@ -1,0 +1,114 @@
+/* colors */
+$white: #fff;
+$black: #000;
+$pink: #eb104a;
+$dark-gray: #403f3f;
+$gray: #a0a0a0;
+$light-gray: #d7d7d7;
+$blue: #0c99e9;
+
+
+$colorname: white;
+$hexadecimal: $white;
+@each $hexa in $hexadecimal {
+  @each $color in $colorname {
+    .bg-#{$color} {
+      background-color:#{$hexa} !important;
+    }
+    .ft-#{$color},
+    .ft-hover-#{$color}:hover,
+    .ft-hover-#{$color} a:hover {
+      color:#{$hexa} !important;
+    }
+  }
+}
+
+$colorname: black;
+$hexadecimal: $black;
+@each $hexa in $hexadecimal {
+  @each $color in $colorname {
+    .bg-#{$color} {
+      background-color:#{$hexa} !important;
+    }
+    .ft-#{$color},
+    .ft-hover-#{$color}:hover,
+    .ft-hover-#{$color} a:hover {
+      color:#{$hexa} !important;
+    }
+  }
+}
+
+$colorname: pink;
+$hexadecimal: $pink;
+@each $hexa in $hexadecimal {
+  @each $color in $colorname {
+    .bg-#{$color} {
+      background-color:#{$hexa} !important;
+    }
+    .ft-#{$color},
+    .ft-hover-#{$color}:hover,
+    .ft-hover-#{$color} a:hover {
+      color:#{$hexa} !important;
+    }
+  }
+}
+
+$colorname: dark-gray;
+$hexadecimal: $dark-gray;
+@each $hexa in $hexadecimal {
+  @each $color in $colorname {
+    .bg-#{$color} {
+      background-color:#{$hexa} !important;
+    }
+    .ft-#{$color},
+    .ft-hover-#{$color}:hover,
+    .ft-hover-#{$color} a:hover {
+      color:#{$hexa} !important;
+    }
+  }
+}
+
+$colorname: gray;
+$hexadecimal: $gray;
+@each $hexa in $hexadecimal {
+  @each $color in $colorname {
+    .bg-#{$color} {
+      background-color:#{$hexa} !important;
+    }
+    .ft-#{$color},
+    .ft-hover-#{$color}:hover,
+    .ft-hover-#{$color} a:hover {
+      color:#{$hexa} !important;
+    }
+  }
+}
+
+$colorname: light-gray;
+$hexadecimal: $light-gray;
+@each $hexa in $hexadecimal {
+  @each $color in $colorname {
+    .bg-#{$color} {
+      background-color:#{$hexa} !important;
+    }
+    .ft-#{$color},
+    .ft-hover-#{$color}:hover,
+    .ft-hover-#{$color} a:hover {
+      color:#{$hexa} !important;
+    }
+  }
+}
+
+$colorname: blue;
+$hexadecimal: $blue;
+@each $hexa in $hexadecimal {
+  @each $color in $colorname {
+    .bg-#{$color} {
+      background-color:#{$hexa} !important;
+    }
+    .ft-#{$color},
+    .ft-hover-#{$color}:hover,
+    .ft-hover-#{$color} a:hover {
+      color:#{$hexa} !important;
+    }
+  }
+}

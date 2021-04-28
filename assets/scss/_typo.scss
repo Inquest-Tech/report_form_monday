@@ -1,0 +1,45 @@
+// fonts {
+//  font-family: 'Roboto', sans-serif;
+// 	font-weight: 300;
+// 	font-weight: 400;
+// 	font-weight: 700;
+// }
+
+//Default header styles
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+}
+
+
+//titles
+.title-01 {
+	font-size: 28px;
+	font-weight: 900;
+	color:$dark-gray;
+	margin:15px 0;
+}
+
+.title-02 {
+	font-size: 18px;
+	font-weight: 700;
+	color:$dark-gray;
+	margin:0;
+}
+
+
+//<a>
+a,
+.transition {
+		@include transition(400ms);
+}
+
+a {
+	color:$blue;
+}
+
+a:hover {
+	color:$blue;
+	text-decoration: none;
+}

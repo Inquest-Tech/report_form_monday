@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=6" />
+    <meta name="mobileoptimized" content="0" />
+    <meta name="description" content="">
+    <meta name="robots" content="noindex, nofollow">
+
+    <title>Inquest - Formulário de pedido de REPORT</title>
+
+    <!--favicon-->
+    <link rel="shortcut icon" href="favicon.ico">
+
+    <!--css primary-->
+    <link rel="stylesheet" href="dist/css/app-primary.min.css?c=1">
+</head>
+
+<body>
+
+
+
+<header class="header">
+    <div class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-4">
+                <h1 class="logo">               
+                    <a href="//inquest.tech">
+                        <img src="images/inquest.png" alt="Inquest">
+                    </a>
+                </h1>
+            </div>
+            <div class="col-8">
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+
+                <nav class="navmenu" aria-label="Menu de navegação">
+                    <a target="_blank" href="//inquest.tech/termos-de-uso.html">Termos de Uso</a>  
+                    <a target="_blank" href="https://inquest.com.br/">Acesse nosso site</a>                                       
+                </nav>                 
+            </div>
+        </div><!--row-->
+    </div><!--container-->
+</header>
+
+
+<main class="main-content">
+
+    <div class="finery-01"></div>
+    <div class="finery-02"></div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-7">
+                <h2 class="title-01">Formulário de pedido de REPORT</h2>
+
+                <p>Preencha os campos corretamente, nossa equipe entrará em contato com você o mais breve possível.</p>
+                <p>(*) Campos de preenchimento obrigatórios.</p>
+
+                <form id="form" class="mt-5">
+
+                    <div class="card">
+                        <div class="card__header">
+                            <span>1</span>
+                            <div class="card__header--content">
+                                <h2 class="title-02">Nome do caso*</h2>
+                                <p>Inserir o nome do caso para o seu controle interno (normalmente é o nome do pesquisado principal – ex.: Caso Moriart)</p>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <img src="images/nome-do-caso.svg" alt="">
+                            <input id="nome-do-caso" type="text" class="required" placeholder="Nome do caso*" tabindex="1">
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card__header">
+                            <span>2</span>
+                            <div class="card__header--content">
+                                <h2 class="title-02">CPFs e CNPJs*</h2>
+                                <p>CPFs e/ou CNPJs a serem consultados e ligados à este caso</p>
+                            </div>
+                        </div>      
+
+                        <div class="cpfcnpj-group"></div>    
+
+
+                        <div class="field--buttons">
+                            <button type="button" id="cpfcnpj-add" tabindex="2">Adicionar CPF / CNPJ</button>
+                        </div>
+
+                        <div id="cpfcnpj-group-error">Campo obrigatório</div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card__header">
+                            <span>3</span>
+                            <div class="card__header--content">
+                                <h2 class="title-02">Finalidade e justa causa da pesquisa*</h2>
+                                <p>Preenchimento obrigatório. Indique dentre as opções abaixo a finalidade da pesquisa solicitada e a justa causa que permite a pesquisa segundo as leis de proteção de dados vigente (a justa causa estará em parênteses ao lado da finalidade escolhida). Por favor, certifique-se de que há justa causa para a pesquisa, pois do contrário a pesquisa NÃO pode ser realizada. Para saber mais a respeito, veja os termos de uso <a target="blank" href="termos-de-uso.html">aqui</a> (a continuidade do preenchimento pressupõe irrestrita concordância).</p>
+                            </div>
+                        </div>
+
+                        <div id="finalidade" class="field">                 
+                            <label class="radio-field">
+                                <input tabindex="4" type="radio" name="finalidade" data-finalidade="Cobrança (proteção ao crédito)">
+                                <p><strong>Finalidade de cobrança</strong><br>
+                                (proteção ao crédito)</p>
+                            </label>
+
+                            <label class="radio-field">
+                                <input tabindex="5" type="radio" name="finalidade" data-finalidade="Recuperação Judicial – RJ (proteção ao crédito)">
+                                <p><strong>Finalidade de atuação em Recuperação Judicial – RJ</strong><br>
+                                (proteção ao crédito)</p>
+                            </label>
+
+                            <label class="radio-field">
+                                <input tabindex="6" type="radio" name="finalidade" data-finalidade="Due diligence e pesquisas preventivas (procedimentos contratuais preliminares)">
+                                <p><strong>Finalidade de due diligence e pesquisas preventivas</strong><br>
+                                (procedimentos contratuais preliminares)</p>
+                            </label>
+
+                            <label class="radio-field">
+                                <input tabindex="7" type="radio" name="finalidade" data-finalidade="Fusões e aquisições – Mergers & Acquisitions – M&A (procedimentos contratuais preliminares)">
+                                <p><strong>Finalidade de fusões e aquisições</strong><br>
+                                (procedimentos contratuais preliminares")</p>
+                            </label>
+
+                            <label class="radio-field">
+                                <input tabindex="8" type="radio" name="finalidade" data-finalidade="Recuperação Judicial – RJ (proteção ao crédito)">
+                                <p><strong>Finalidade de compliance e reconstituição de fatos</strong><br>
+                                (atendimento de interesses legítimos)</p>
+                            </label>
+
+                            <label class="radio-field">
+                                <input tabindex="9" type="radio" name="finalidade" data-finalidade="Inventário (exercício regular de direitos em processo judicial, administrativo ou arbitral)">
+                                <p><strong>Finalidade de inventário</strong><br>
+                                (exercício regular de direitos em processo judicial, administrativo ou arbitral)</p>
+                            </label>
+
+                            <label class="radio-field">
+                                <input tabindex="10" type="radio" name="finalidade" data-finalidade="Divórcio (exercício regular de direitos em processo judicial, administrativo ou arbitral)">
+                                <p><strong>Finalidade de divórcio</strong><br>
+                                (exercício regular de direitos em processo judicial, administrativo ou arbitral)</p>
+                            </label>
+
+                            <label class="radio-field">
+                                <input tabindex="11" type="radio" name="finalidade" data-finalidade="Constituição de provas (exercício regular de direitos em processo judicial, administrativo ou arbitral)">
+                                <p><strong>Finalidade de constituição de provas</strong><br>
+                                (exercício regular de direitos em processo judicial, administrativo ou arbitral)</p>
+                            </label>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card__header">
+                            <span>4</span>
+                            <div class="card__header--content">
+                                <h2 class="title-02">Serviço adquirido*</h2>       
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <img src="images/servico.svg" alt="">
+                            <select id="servico" class="required" tabindex="12">
+                                <option value="0" hidden>Serviço adquirido*</option>
+                                <option value="Report Smart - R$ 348,00 - cada">Report Smart - R$ 348,00 - cada</option>
+                                <option value="Report Simples - R$ 97,00 - cada">Report Simples - R$ 97,00 - cada</option>                               
+                            </select>
+                        </div>
+                    </div>
+
+
+
+                    <div class="card">
+                        <div class="card__header">
+                            <span>5</span>
+                            <div class="card__header--content">
+                                <h2 class="title-02">Nome do solicitante*</h2>
+                                <p>Coloque o seu nome e/ou da empresa que você representa (ex.: Jordan Belfort, da Stratton Oakmont)</p>
+                            </div>
+                        </div>    
+
+                        <div class="field">
+                            <img src="images/nome.svg" alt="">
+                            <input id="nome-solicitante" type="text" class="required" placeholder="Nome do solicitante*" tabindex="13">
+                        </div>                  
+                    </div>
+
+                    
+
+                    <div class="card">
+                        <div class="card__header">
+                            <span>6</span>
+                            <div class="card__header--content">
+                                <h2 class="title-02">Seu e-mail*</h2>
+                                <p>Insira aqui o e-mail para onde o resultado deverá ser enviado</p>
+                            </div>
+                        </div>    
+
+                        <div class="field">
+                            <img src="images/email.svg" alt="">
+                            <input id="email-solicitante" type="email" class="required" placeholder="Seu e-mail*" tabindex="14">
+                        </div>                  
+                    </div>
+
+
+
+                    <label class="checkbox-field">
+                        <input type="checkbox" class="required" tabindex="15"> <p>Li e aceito os <a target="_blank" href="//inquest.tech/termos-de-uso.html">termos de uso </a> do serviço.</p>
+                    </label>
+                   
+                    <button id="submit" class="button w-100" tabindex="16">Enviar</button>
+
+                    <div id="acceptance-error" class="form-response"></div>
+
+                    <div id="form-error" class="form-response"></div>
+                </form> 
+
+            </div>
+        </div><!--row-->
+    </div><!--container-->
+</main>
+
+
+<div class="overlay">
+    <div class="overlay-content warning">
+        <span class="overlay--close">&times;</span>
+        <p></p>
+    </div>
+    <div class="overlay-content success">
+        <span class="overlay--close">&times;</span>
+        <p></p>
+    </div>
+</div>
+
+
+<footer class="footer">
+    Copyright 2021 - Todos os direitos reservados - Inquest
+</footer>
+
+
+
+<!--google fonts-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap" rel="stylesheet">
+
+
+<!--scripts-->
+<script>
+    var baseUrl = '//inquest.tech';
+</script>
+<script src="dist/js/jquery-3.3.1.min.js"></script>
+<script src="dist/js/app.min.js"></script>
+
+
+</body>
+</html>
