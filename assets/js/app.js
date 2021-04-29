@@ -191,7 +191,7 @@ function navmenu() {
 
 //add cpf/cnpj field
 $('#cpfcnpj-add').click(function() {        
-    $('.cpfcnpj-group').append('<div class="field"><img src="images/cpf-cnpj.svg" alt=""><input type="tel" class="mask-cpfcnpj cpfcnpj-validation" placeholder="CPF / CNPJ"><span title="Remover este campo" class="remove-cpfcnpj">&times;</span></div>');
+    $('.cpfcnpj-group').append('<div class="field"><img src="images/cpf-cnpj.svg" alt=""><input type="tel" class="mask-cpfcnpj cpfcnpj-validation required" placeholder="CPF / CNPJ"><span title="Remover este campo" class="remove-cpfcnpj">&times;</span></div>');
     mask();
     cpfcnpjValidation();
 }); 
