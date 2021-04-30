@@ -1,8 +1,8 @@
-$(document).ready(function() {      
+$(document).ready(function() {   
+    overlay();   
     cpfcnpjValidation();
     mask();
-    navmenu();
-    overlay();
+    navmenu();    
 });
 
 
@@ -21,7 +21,11 @@ function cpfcnpjValidation() {
         var val = $(this).val();
         var thisField = $(this);
 
-        if (val.length == 14) {
+        if (val.length == 0) {
+            thisField.addClass('error');
+        }
+
+        else if (val.length == 14) {
             var cpf = val.trim();
          
             cpf = cpf.replace(/\./g, '');
@@ -149,17 +153,6 @@ function cpfcnpjValidation() {
 
 //mask
 function mask() {
-    var SPMaskBehavior = function (val) {
-      return val.replace(/\D/g, '').length === 11 ? '(00) 00000-0000' : '(00) 0000-00009';
-    },
-    spOptions = {
-      onKeyPress: function(val, e, field, options) {
-          field.mask(SPMaskBehavior.apply({}, arguments), options);
-        }
-    };
-    $('.mask-phone').mask(SPMaskBehavior, spOptions);
-    
-
     var cpfcnpj = function (val) {
         var fieldVal = val.replace(/\D/g, '');
         if ( fieldVal.length === 14 ) {
@@ -191,7 +184,7 @@ function navmenu() {
 
 //add cpf/cnpj field
 $('#cpfcnpj-add').click(function() {        
-    $('.cpfcnpj-group').append('<div class="field"><img src="images/cpf-cnpj.svg" alt=""><input type="tel" class="mask-cpfcnpj cpfcnpj-validation required" placeholder="CPF / CNPJ"><span title="Remover este campo" class="remove-cpfcnpj">&times;</span></div>');
+    $('.cpfcnpj-group').append('<div class="field"><img src="images/cpf-cnpj.svg" alt=""><input type="tel" class="mask-cpfcnpj cpfcnpj-validation error" placeholder="CPF / CNPJ"><span title="Remover este campo" class="remove-cpfcnpj">&times;</span></div>');
     mask();
     cpfcnpjValidation();
 }); 
@@ -206,7 +199,6 @@ $('#submit').click(function(e) {
     e.preventDefault(); 
 
     $('#form-error').html('');
-
 
     //check for empty input required field
     $('#form input.required').each(function(e) {
@@ -269,7 +261,7 @@ $('#submit').click(function(e) {
     else {
         $('#cpfcnpj-group-error').addClass('error');    
     }
-
+    
 
     //check for fields with .error
     $('#form input, #form select, #finalidade, #cpf-cnpjgroup-error').each(function(e) {
@@ -285,7 +277,6 @@ $('#submit').click(function(e) {
             $('.overlay, .overlay-content.warning').addClass('active').find('p').html('');
         }      
     });
-
 
 
     //send to monday
