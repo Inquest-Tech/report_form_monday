@@ -294,6 +294,7 @@ $('#submit').click(function(e) {
     var servico = $('#servico').val().toUpperCase();
     var nomeSolicitante = $('#nome-solicitante').val();
     var emailSolicitante = $('#email-solicitante').val();
+    var observacoes = $('#observacoes').val();
 
     $.ajax({
         type: 'POST',
@@ -306,6 +307,7 @@ $('#submit').click(function(e) {
             servico: servico,
             nomesolicitante: nomeSolicitante,
             emailsolicitante: emailSolicitante,
+            observacoes: observacoes,
         }
     }).done(function(resposta) {
 

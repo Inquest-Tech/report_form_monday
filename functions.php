@@ -13,6 +13,7 @@ $justacausa = $_POST['justacausa'];
 $servico = $_POST['servico'];
 $nomesolicitante = $_POST['nomesolicitante'];
 $emailsolicitante = $_POST['emailsolicitante'];
+$observacoes = $_POST['observacoes'];
 
 
 $token = 'eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjExMTgyNDk5NiwidWlkIjoxNzIyNzQ3NCwiaWFkIjoiMjAyMS0wNS0zMFQxMzoyOTozMi4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6NDkxNzk1NywicmduIjoidXNlMSJ9.UWe6fF8tVdqTtYahjxceDr1etHQXF-3J-xATlt3inoM';
@@ -31,7 +32,7 @@ $vars = ['myItemName' => $nomecaso,
 	'status_1' => ['label' =>  $servico],
 	'preencha_seu_nome_completo' => $nomesolicitante,
 	'seu_e_mail' => $emailsolicitante,
-
+    'obs2' => ['text' =>  $observacoes]
 ])];
 
 $data = @file_get_contents($apiUrl, false, stream_context_create([
