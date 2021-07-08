@@ -4,7 +4,6 @@ if ( $_SERVER['REQUEST_METHOD']=='GET' && realpath(__FILE__) == realpath( $_SERV
     die();
 }
 
-
 $cpfcnpjqty = $_POST['cpfcnpjqty'];
 $cpfcnpj = $_POST['cpfcnpj'];
 $nomecaso = $_POST['nomecaso'];
@@ -15,11 +14,9 @@ $nomesolicitante = $_POST['nomesolicitante'];
 $emailsolicitante = $_POST['emailsolicitante'];
 $observacoes = $_POST['observacoes'];
 
-
 $token = 'eyJhbGciOiJIUzI1NiJ9.eyJ0aWQiOjExMTgyNDk5NiwidWlkIjoxNzIyNzQ3NCwiaWFkIjoiMjAyMS0wNS0zMFQxMzoyOTozMi4wMDBaIiwicGVyIjoibWU6d3JpdGUiLCJhY3RpZCI6NDkxNzk1NywicmduIjoidXNlMSJ9.UWe6fF8tVdqTtYahjxceDr1etHQXF-3J-xATlt3inoM';
 $apiUrl = 'https://api.monday.com/v2';
 $headers = ['Content-Type: application/json', 'Authorization: ' . $token];
-
 
 $query = 'mutation ($myItemName: String!, $columnVals: JSON!) { create_item (board_id:965500914, item_name:$myItemName, column_values:$columnVals) { id } }';
 $vars = ['myItemName' => $nomecaso, 
@@ -45,7 +42,6 @@ $data = @file_get_contents($apiUrl, false, stream_context_create([
 $responseContent = json_decode($data, true);
 
 echo json_encode($responseContent);
-
 
 die();
 ?>
