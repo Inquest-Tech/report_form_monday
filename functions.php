@@ -16,8 +16,10 @@ $cpfCnpjQtyPrimary = $_POST['cpfCnpjQtyPrimary'];
 $cpfCnpjPrimary = $_POST['cpfCnpjPrimary'];
 
 $cpfCnpjQtySecondary = $_POST['cpfCnpjQtySecondary'];
+
 $cpfCnpjSecondary = $_POST['cpfCnpjSecondary'];
 if( $cpfCnpjSecondary ) {
+    $cpfCnpjPrimary = $cpfCnpjPrimary.','.$cpfCnpjSecondary; //concat the primary and secondary targets
     array_push( $subitems_values, array('label' => 'Target(s) Secundários(s)', 'value' => $cpfCnpjSecondary) );
 }
 
@@ -238,7 +240,7 @@ $vars = ['myItemName' => $nomecaso,
         'status5'  => ['label' =>  $finalidade],
         'status_1' => ['label' =>  $servico],
         'cpf_ou_cnpj_que_deseja_consultar3' => $cpfCnpjPrimary,
-        'n_meros' => $cpfCnpjQtyPrimary,
+        'n_meros' => $cpfCnpjQtyPrimary + $cpfCnpjQtySecondary,
     ])
 ];
 
@@ -258,12 +260,23 @@ $responseContent = json_decode($data, true);
 foreach( $subitems_values as $subitem) {
     $query_subitem = 'mutation ($mySubItemName: String!, $columnValsSub: JSON!) { create_subitem (parent_item_id:'.$responseContent["data"]["create_item"]["id"].', item_name:$mySubItemName, column_values:$columnValsSub) { id } }';
 
-    $vars_subitem = ['mySubItemName' => $subitem['label'], 
-        'columnValsSub' => json_encode([
-            'texto_longo' => ['text' =>  $subitem['value']],
-            'n_meros'  => $cpfCnpjQtySecondary,
-        ])
-    ];
+
+    if( $subitem['label'] == 'Target(s) Secundários(s)' ) {
+        $vars_subitem = ['mySubItemName' => $subitem['label'], 
+            'columnValsSub' => json_encode([
+                'texto_longo' => ['text' =>  $subitem['value']],
+                'n_meros' => $cpfCnpjQtySecondary
+            ])
+        ];
+    }
+
+    else {
+        $vars_subitem = ['mySubItemName' => $subitem['label'], 
+            'columnValsSub' => json_encode([
+                'texto_longo' => ['text' =>  $subitem['value']],
+            ])
+        ];
+    }
 
     $data_subitem = @file_get_contents($apiUrl, false, stream_context_create([
         'http' => [
