@@ -479,7 +479,7 @@ function fieldEmailDoSolicitante() {
 }
 
 function fieldServicoAdquirido() {
-    $('#case-fields').append('<div class="field"> <label><strong>Serviço adquirido*</strong></label> <div class="field__content"> <img src="images/servico.svg" alt=""> <select id="servico" class="required"> <option value="0" hidden>Serviço adquirido*</option> <option value="REPORT SP">Report Simples - R$ 97,00 - (por CPF/CNPJ)</option> <option value="REPORT SMART">Report Smart - R$ 358,00 - (por CPF/CNPJ)</option> <option value="REPORT SMART PRO">Report Smart Pro - R$ 743,00 - (por CPF/CNPJ)</option> <option value="DOCS">DOCS - Serviço avulso</option> <option value="PRECOGS">PRECOGS - Preço sob consulta</option> <option value="DEEP">DEEP - Preço sob consulta</option></select> </div></div>');
+    $('#case-fields').append('<div class="field"> <label><strong>Serviço adquirido*</strong></label> <div class="field__content"> <img src="images/servico.svg" alt=""> <select id="servico" class="required"> <option value="0" hidden>Serviço adquirido*</option> <option value="REPORT SP">Report Simples - R$ 97,00 - (por CPF/CNPJ)</option> <option value="REPORT SMART">Report Smart - R$ 358,00 - (por CPF/CNPJ)</option> <option value="REPORT SMART PRO">Report Smart Pro - R$ 743,00 - (por CPF/CNPJ)</option> <option value="DOCS">DOCS - Serviço avulso</option> <option value="PRECOGS">PRECOGS - Preço sob consulta</option> <option value="DEEP">DEEP - Preço sob consulta</option> <option value="SMART CRED">SMART CRED - Preço sob consulta</option></select> </div></div>');
 }
 
 function fieldTargetsPrimarios() {
