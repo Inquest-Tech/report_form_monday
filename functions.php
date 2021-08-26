@@ -24,204 +24,124 @@ if( $cpfCnpjSecondary ) {
 }
 
 $motivosTargetsSecundarios = $_POST['motivosTargetsSecundarios'];
-if( $motivosTargetsSecundarios ) {
-    array_push( $subitems_values, array('label' => 'Motivo de inserção dos pesquisados secundários', 'value' => $motivosTargetsSecundarios) );
-}
+array_push( $subitems_values, array('label' => 'Motivo de inserção dos pesquisados secundários', 'value' => $motivosTargetsSecundarios) );
 
 $localidadeFoco = $_POST['localidadeFoco'];
-if( $localidadeFoco ) {
-    array_push( $subitems_values, array('label' => 'Localidade foco', 'value' => $localidadeFoco) );
-}
+array_push( $subitems_values, array('label' => 'Localidade foco', 'value' => $localidadeFoco) );
 
 $dataCredito = $_POST['dataCredito'];
-if( $dataCredito ) {
-    array_push( $subitems_values, array('label' => 'Data do crédito', 'value' => $dataCredito) );
-}
+array_push( $subitems_values, array('label' => 'Data do crédito', 'value' => $dataCredito) );
 
 $dataVencimentoContratoInadimplemento = $_POST['dataVencimentoContratoInadimplemento'];
-if( $dataVencimentoContratoInadimplemento ) {
-    array_push( $subitems_values, array('label' => 'Data do vencimento/inadimplemento', 'value' => $dataVencimentoContratoInadimplemento) );
-}
+array_push( $subitems_values, array('label' => 'Data do vencimento/inadimplemento', 'value' => $dataVencimentoContratoInadimplemento) );
 
 $dataProtesto = $_POST['dataProtesto'];
-if( $dataProtesto ) {
-    array_push( $subitems_values, array('label' => 'Data do protesto', 'value' => $dataProtesto) );
-}
+array_push( $subitems_values, array('label' => 'Data do protesto', 'value' => $dataProtesto) );
 
 $dataDistribuicao = $_POST['dataDistribuicao'];
-if( $dataDistribuicao ) {
-    array_push( $subitems_values, array('label' => 'Data da distribuição', 'value' => $dataDistribuicao) );
-}
+array_push( $subitems_values, array('label' => 'Data da distribuição', 'value' => $dataDistribuicao) );
 
 $numeroProcesso = $_POST['numeroProcesso'];
-if( $numeroProcesso ) {
-    array_push( $subitems_values, array('label' => 'Número do processo', 'value' => $numeroProcesso) );
-}
+array_push( $subitems_values, array('label' => 'Número do processo', 'value' => $numeroProcesso) );
 
 $valorHistoricoCausaCredito = $_POST['valorHistoricoCausaCredito'];
-if( $valorHistoricoCausaCredito ) {
-    array_push( $subitems_values, array('label' => 'Valor histórico da causa ou do crédito', 'value' => $valorHistoricoCausaCredito) );
-}
+array_push( $subitems_values, array('label' => 'Valor histórico da causa ou do crédito', 'value' => $valorHistoricoCausaCredito) );
 
 $dataCitacao = $_POST['dataCitacao'];
-if( $dataCitacao ) {
-    array_push( $subitems_values, array('label' => 'Data da citação', 'value' => $dataCitacao) );
-}
+array_push( $subitems_values, array('label' => 'Data da citação', 'value' => $dataCitacao) );
 
 $advogadosReusExecutados = $_POST['advogadosReusExecutados'];
-if( $advogadosReusExecutados ) {
-    array_push( $subitems_values, array('label' => 'Advogados do(s) réu(s)/executado(s)', 'value' => $advogadosReusExecutados) );
-}
+array_push( $subitems_values, array('label' => 'Advogados do(s) réu(s)/executado(s)', 'value' => $advogadosReusExecutados) );
 
 $garantiasPrestadas = $_POST['garantiasPrestadas'];
-if( $garantiasPrestadas ) {
-    array_push( $subitems_values, array('label' => 'Garantias prestadas', 'value' => $garantiasPrestadas) );
-}
+array_push( $subitems_values, array('label' => 'Garantias prestadas', 'value' => $garantiasPrestadas) );
 
 $observacoes = $_POST['observacoes'];
-if( $observacoes ) {
-    array_push( $subitems_values, array('label' => 'Observações', 'value' => $observacoes) );
-}
+array_push( $subitems_values, array('label' => 'Observações', 'value' => $observacoes) );
 
 $devedoresSolidarios = $_POST['devedoresSolidarios'];
-if( $devedoresSolidarios ) {
-    array_push( $subitems_values, array('label' => 'Devedores solidários', 'value' => $devedoresSolidarios) );
-}
+array_push( $subitems_values, array('label' => 'Devedores solidários', 'value' => $devedoresSolidarios) );
 
 $processoRjFalencia = $_POST['processoRjFalencia'];
-if( $processoRjFalencia ) {
-    array_push( $subitems_values, array('label' => 'Processo de RJ ou Falência', 'value' => $processoRjFalencia) );
-}
+array_push( $subitems_values, array('label' => 'Processo de RJ ou Falência', 'value' => $processoRjFalencia) );
 
 $valorNominalCreditoCausa = $_POST['valorNominalCreditoCausa'];
-if( $valorNominalCreditoCausa ) {
-    array_push( $subitems_values, array('label' => 'Valor nominal do crédito ou da causa', 'value' => $valorNominalCreditoCausa) );
-}
+array_push( $subitems_values, array('label' => 'Valor nominal do crédito ou da causa', 'value' => $valorNominalCreditoCausa) );
 
 $contextoNegocial = $_POST['contextoNegocial'];
-if( $contextoNegocial ) {
-    array_push( $subitems_values, array('label' => 'Contexto negocial', 'value' => $contextoNegocial) );
-}
+array_push( $subitems_values, array('label' => 'Contexto negocial', 'value' => $contextoNegocial) );
 
 $dataEstimada = $_POST['dataEstimada'];
-if( $dataEstimada ) {
-    array_push( $subitems_values, array('label' => 'Data estimada para o negócio', 'value' => $dataEstimada) );
-}
+array_push( $subitems_values, array('label' => 'Data estimada para o negócio', 'value' => $dataEstimada) );
 
 $valorNegocio = $_POST['valorNegocio'];
-if( $valorNegocio ) {
-    array_push( $subitems_values, array('label' => 'Valor do negócio', 'value' => $valorNegocio) );
-}
+array_push( $subitems_values, array('label' => 'Valor do negócio', 'value' => $valorNegocio) );
 
 $objetoNegocio = $_POST['objetoNegocio'];
-if( $objetoNegocio ) {
-    array_push( $subitems_values, array('label' => 'Objeto do negócio', 'value' => $objetoNegocio) );
-}
+array_push( $subitems_values, array('label' => 'Objeto do negócio', 'value' => $objetoNegocio) );
 
 $denuncia = $_POST['denuncia'];
-if( $denuncia ) {
-    array_push( $subitems_values, array('label' => 'Denúncia', 'value' => $denuncia) );
-}
+array_push( $subitems_values, array('label' => 'Denúncia', 'value' => $denuncia) );
 
 $historicoAmpliado = $_POST['historicoAmpliado'];
-if( $historicoAmpliado ) {
-    array_push( $subitems_values, array('label' => 'Histórico ampliado', 'value' => $historicoAmpliado) );
-}
+array_push( $subitems_values, array('label' => 'Histórico ampliado', 'value' => $historicoAmpliado) );
 
 $dataEntrada = $_POST['dataEntrada'];
-if( $dataEntrada ) {
-    array_push( $subitems_values, array('label' => 'Data de entrada na empresa ou de início do relacionamento', 'value' => $dataEntrada) );
-}
+array_push( $subitems_values, array('label' => 'Data de entrada na empresa ou de início do relacionamento', 'value' => $dataEntrada) );
 
 $dataInicioNaoConformidade = $_POST['dataInicioNaoConformidade'];
-if( $dataInicioNaoConformidade ) {
-    array_push( $subitems_values, array('label' => 'Início do período de não-conformidade', 'value' => $dataInicioNaoConformidade) );
-}
+array_push( $subitems_values, array('label' => 'Início do período de não-conformidade', 'value' => $dataInicioNaoConformidade) );
 
 $dataEncerramentoNaoConformidade = $_POST['dataEncerramentoNaoConformidade'];
-if( $dataEncerramentoNaoConformidade ) {
-    array_push( $subitems_values, array('label' => 'Fim do período de não-conformidade', 'value' => $dataEncerramentoNaoConformidade) );
-}
+array_push( $subitems_values, array('label' => 'Fim do período de não-conformidade', 'value' => $dataEncerramentoNaoConformidade) );
 
 $dataSaida = $_POST['dataSaida'];
-if( $dataSaida ) {
-    array_push( $subitems_values, array('label' => 'Data de saída', 'value' => $dataSaida) );
-}
+array_push( $subitems_values, array('label' => 'Data de saída', 'value' => $dataSaida) );
 
 $objetivosEscopo = $_POST['objetivosEscopo'];
-if( $objetivosEscopo ) {
-    array_push( $subitems_values, array('label' => 'Objetivos e escopo', 'value' => $objetivosEscopo) );
-}
+array_push( $subitems_values, array('label' => 'Objetivos e escopo', 'value' => $objetivosEscopo) );
 
 $historiaCasal = $_POST['historiaCasal'];
-if( $historiaCasal ) {
-    array_push( $subitems_values, array('label' => 'História do casal', 'value' => $historiaCasal) );
-}
+array_push( $subitems_values, array('label' => 'História do casal', 'value' => $historiaCasal) );
 
 $duracaoRelacionamento = $_POST['duracaoRelacionamento'];
-if( $duracaoRelacionamento ) {
-    array_push( $subitems_values, array('label' => 'Duração do relacionamento', 'value' => $duracaoRelacionamento) );
-}
+array_push( $subitems_values, array('label' => 'Duração do relacionamento', 'value' => $duracaoRelacionamento) );
 
 $regimeBens = $_POST['regimeBens'];
-if( $regimeBens ) {
-    array_push( $subitems_values, array('label' => 'Regime de bens do casal', 'value' => $regimeBens) );
-}
+array_push( $subitems_values, array('label' => 'Regime de bens do casal', 'value' => $regimeBens) );
 
 $bensConhecidos = $_POST['bensConhecidos'];
-if( $bensConhecidos ) {
-    array_push( $subitems_values, array('label' => 'Bens conhecidos', 'value' => $bensConhecidos) );
-}
+array_push( $subitems_values, array('label' => 'Bens conhecidos', 'value' => $bensConhecidos) );
 
 $judicializacao = $_POST['judicializacao'];
-if( $judicializacao ) {
-    array_push( $subitems_values, array('label' => 'Judicialização', 'value' => $judicializacao) );
-}
+array_push( $subitems_values, array('label' => 'Judicialização', 'value' => $judicializacao) );
 
 $redeRelacionamentos = $_POST['redeRelacionamentos'];
-if( $redeRelacionamentos ) {
-    array_push( $subitems_values, array('label' => 'Rede principal de relacionamentos', 'value' => $redeRelacionamentos) );
-}
+array_push( $subitems_values, array('label' => 'Rede principal de relacionamentos', 'value' => $redeRelacionamentos) );
 
 $falecido = $_POST['falecido'];
-if( $falecido ) {
-    array_push( $subitems_values, array('label' => 'Falecido', 'value' => $falecido) );
-}
+array_push( $subitems_values, array('label' => 'Falecido', 'value' => $falecido) );
 
 $dataFalecimento = $_POST['dataFalecimento'];
-if( $dataFalecimento ) {
-    array_push( $subitems_values, array('label' => 'Data de falecimento', 'value' => $dataFalecimento) );
-}
+array_push( $subitems_values, array('label' => 'Data de falecimento', 'value' => $dataFalecimento) );
 
 $sucessoresCredoresDevedores = $_POST['sucessoresCredoresDevedores'];
-if( $sucessoresCredoresDevedores ) {
-    array_push( $subitems_values, array('label' => 'Sucessores, credores e devedores', 'value' => $sucessoresCredoresDevedores) );
-}
+array_push( $subitems_values, array('label' => 'Sucessores, credores e devedores', 'value' => $sucessoresCredoresDevedores) );
 
 $regimeBensDeCujus = $_POST['regimeBensDeCujus'];
-if( $regimeBensDeCujus ) {
-    array_push( $subitems_values, array('label' => 'Regime de bens', 'value' => $regimeBensDeCujus) );
-}
+array_push( $subitems_values, array('label' => 'Regime de bens', 'value' => $regimeBensDeCujus) );
 
 $testamento = $_POST['testamento'];
-if( $testamento ) {
-    array_push( $subitems_values, array('label' => 'Testamento', 'value' => $testamento) );
-}
+array_push( $subitems_values, array('label' => 'Testamento', 'value' => $testamento) );
 
 $suspeitasOcultamento = $_POST['suspeitasOcultamento'];
-if( $suspeitasOcultamento ) {
-    array_push( $subitems_values, array('label' => 'Suspeitas de ocultamento', 'value' => $suspeitasOcultamento) );
-}
+array_push( $subitems_values, array('label' => 'Suspeitas de ocultamento', 'value' => $suspeitasOcultamento) );
 
 $situacaoFamiliar = $_POST['situacaoFamiliar'];
-if( $situacaoFamiliar ) {
-    array_push( $subitems_values, array('label' => 'Situação familiar', 'value' => $situacaoFamiliar) );
-}
+array_push( $subitems_values, array('label' => 'Situação familiar', 'value' => $situacaoFamiliar) );
 
 $pesquisaAvulsa = $_POST['pesquisaAvulsa'];
-if( $pesquisaAvulsa ) {
-    array_push( $subitems_values, array('label' => 'Pesquisa avulsa', 'value' => $pesquisaAvulsa) );
-}
+array_push( $subitems_values, array('label' => 'Pesquisa avulsa', 'value' => $pesquisaAvulsa) );
 
 
 
